@@ -36,7 +36,7 @@ def run_script():
                     risk = "10-15"
                 else:
                     risk = "8-13"
-                print(f"Recommedation is Biopsy/Therapy + HCC survailence. Risk score is {risk}")
+                print(f"Recommendation is Biopsy/Therapy + HCC survailence. Risk score is {risk}")
             else:
                 if gender == "m":
                     risk = "8-10"
@@ -61,7 +61,7 @@ def run_script():
                         risk = "12-16"
                     else:
                         risk = "10-14"
-                    print(f"Recommedation is Biopsy/Therapy + HCC survailence. Risk score is {risk}")
+                    print(f"Recommendation is Biopsy/Therapy + HCC survailence. Risk score is {risk}")
                 else:
                     if gender == "m":
                         risk = "10-11"
@@ -85,14 +85,14 @@ def run_script():
                 if gender == "m":
                     if age > 40:
                         risk = "4-10"
-                        print(f"Recommedation is HCC survailence. Risk score is {risk}")
+                        print(f"Recommendation is HCC survailence. Risk score is {risk}")
                     else:
                         risk = "2-5"
                         print(f"User has negative HBeAg(-). Recommendation is 6 month follow up. Risk score of {risk}")
                 else:
                     if age > 40:
                         risk = "2-8"
-                        print(f"Recommedation is HCC survailence. Risk score is {risk}")
+                        print(f"Recommendation is HCC survailence. Risk score is {risk}")
                     else:
                         risk = "0-3"
                         print(f"User has negative HBeAg(-). Recommendation is 6 month follow up. Risk score of {risk}")
@@ -100,14 +100,14 @@ def run_script():
                 if gender == "m":
                     if age > 40:
                         risk = "6-11"
-                        print(f"Recommedation is HCC survailence. Risk score is {risk}")
+                        print(f"Recommendation is HCC survailence. Risk score is {risk}")
                     else:
                         risk = "4-6"
                         print(f"User has negative HBeAg(-). Recommendation is 6 month follow up. Risk score of {risk}")
                 else:
                     if age > 40:
                         risk = "4-9"
-                        print(f"Recommedation is HCC survailence. Risk score is {risk}")
+                        print(f"Recommendation is HCC survailence. Risk score is {risk}")
                     else:
                         risk = "2-4"
                         print(f"User has negative HBeAg(-). Recommendation is 6 month follow up. Risk score of {risk}")
@@ -122,14 +122,14 @@ def run_script():
                 if gender == "m":
                     if age > 40:
                         risk = "7-15"
-                        print(f"Recommedation is Biopsy/therapy + HCC surveillance. Risk score is {risk}")
+                        print(f"Recommendation is Biopsy/therapy + HCC surveillance. Risk score is {risk}")
                     else:
                         risk = "5-9"
                         print(f"User has negative HBeAg(-). Recommendation is 3 month follow up. Risk score of {risk}")
                 else:
                     if age > 40:
                         risk = "5-12"
-                        print(f"Recommedation is Biopsy/therapy + HCC surveillance. Risk score is {risk}")
+                        print(f"Recommendation is Biopsy/therapy + HCC surveillance. Risk score is {risk}")
                     else:
                         risk = "3-7"
                         print(f"User has negative HBeAg(-). Recommendation is 3 month follow up. Risk score of {risk}")
@@ -149,14 +149,14 @@ def run_script():
                         if gender == "m":
                             if age > 40:
                                 risk = "9-15"
-                                print(f"Recommedation is Biopsy/therapy + HCC survailence. Risk score is {risk}")
+                                print(f"Recommendation is Biopsy/therapy + HCC survailence. Risk score is {risk}")
                             else:
                                 risk = "7-10"
                                 print(f"User has negative HBeAg(-). Recommendation is 1-3 month follow up. Risk score of {risk}")
                         else:
                             if age > 40:
                                 risk = "7-13"
-                                print(f"Recommedation is Biopsy/therapy + HCC survailence. Risk score is {risk}")
+                                print(f"Recommendation is Biopsy/therapy + HCC survailence. Risk score is {risk}")
                             else:
                                 risk = "5-8"
                                 print(f"User has negative HBeAg(-). Recommendation is 1-3 month follow up. Risk score of {risk}")
