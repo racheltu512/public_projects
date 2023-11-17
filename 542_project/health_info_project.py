@@ -73,9 +73,9 @@ def run_script():
     else:
         print("You have entered that the patient is HBeAG-")
 
-        HBV = input("Is the patient's HBV-DNA score lower than two times their IU score: Enter yes or no: ")
+        HBV = input("Is the patient's HBV-DNA score lower than two times ten to the three IU/mL: Enter yes or no: ")
         while HBV != "yes" and HBV != "no":
-            HBV = input("That is not a valid input. Is the patient's HBV-DNA score lower than their IU score: Enter yes or no: ")
+            HBV = input("That is not a valid input. Is the patient's HBV-DNA score lower than two times ten to the three IU/mL: Enter yes or no: ")
 
         if HBV == "yes":
             ULN = input("Is the patient's ALT score lower than their ULN score: Enter yes or no: ")
@@ -113,7 +113,7 @@ def run_script():
                         risk = "2-4"
                         print(f"User has negative HBeAg(-). Recommendation is 6 month follow up. Risk score of {risk}")
         else:
-            print("You have entered that the patient's HBV-DNA score is not lower than their UI score")
+            print("You have entered that the patient's HBV-DNA score is not lower than two times ten to the three IU/mL")
 
             ULN = input("Is the patient's ALT score lower than their ULN score: Enter yes or no: ")
             while ULN != "yes" and ULN != "no":
