@@ -5,7 +5,6 @@
 
 
 def run_script():
-    # Use a breakpoint in the code line below to debug your script.
     gender = input("Please input the patient's gender. Enter m or f: ")
     while gender != "m" and gender != "f":
 
@@ -103,7 +102,7 @@ def run_script():
                         risk = "6-11"
                         print(f"Recommedation is HCC survailence. Risk score is {risk}")
                     else:
-                        risk = "2-6"
+                        risk = "4-6"
                         print(f"User has negative HBeAg(-). Recommendation is 6 month follow up. Risk score of {risk}")
                 else:
                     if age > 40:
@@ -121,17 +120,19 @@ def run_script():
 
             if ULN == "yes":
                 if gender == "m":
-                    risk = "5-9"
-                else:
-                    risk = "3-7"
-                print(f"User has negative HBeAg(-). Recommendation is 3 month follow up. Risk score of {risk}")
-            else:
-                if age > 40:
-                    if gender == "m":
-                        risk = "7-14"
+                    if age > 40:
+                        risk = "7-15"
+                        print(f"Recommedation is Biopsy/therapy + HCC surveillance. Risk score is {risk}")
                     else:
+                        risk = "5-9"
+                        print(f"User has negative HBeAg(-). Recommendation is 3 month follow up. Risk score of {risk}")
+                else:
+                    if age > 40:
                         risk = "5-12"
-                    print(f"Recommedation is Biopsy/Therapy + HCC survailence. Risk score is {risk}")
+                        print(f"Recommedation is Biopsy/therapy + HCC surveillance. Risk score is {risk}")
+                    else:
+                        risk = "3-7"
+                        print(f"User has negative HBeAg(-). Recommendation is 3 month follow up. Risk score of {risk}")
             if ULN == "no":
                 ULN = input("Is the patient's ALT score greater than twice than their ULN score: Enter yes or no: ")
                 while ULN != "yes" and ULN != "no":
@@ -139,22 +140,26 @@ def run_script():
                 if ULN == "yes":
                     if gender == "m":
                         risk = "7-15"
+                        print(f"User has negative HBeAg(-) and has persistantly high HBV DNA level and elevated ALT. Recommendation is antiviral treatment. Risk score of {risk}")
                     else:
                         risk = "5-13"
-                    print(f"User has negative HBeAg(-) and has persistantly high HBV DNA level and elevated ALT. Recommendation is antiviral treatment. Risk score of {risk}")
+                        print(f"User has negative HBeAg(-) and has persistantly high HBV DNA level and elevated ALT. Recommendation is antiviral treatment. Risk score of {risk}")
                 else:
                     if ULN == "no":
                         if gender == "m":
-                            risk = "7-10"
+                            if age > 40:
+                                risk = "9-15"
+                                print(f"Recommedation is Biopsy/therapy + HCC survailence. Risk score is {risk}")
+                            else:
+                                risk = "7-10"
+                                print(f"User has negative HBeAg(-). Recommendation is 1-3 month follow up. Risk score of {risk}")
                         else:
-                            risk = "5-8"
-                        print(f"User has negative HBeAg(-). Recommendation is 1-3 month follow up. Risk score of {risk}")
-                    if age > 40:
-                        if gender == "m":
-                            risk = "9-15"
-                        else:
-                            risk = "7-13"
-                            print(f"Recommedation is Biopsy/therapy + HCC survailence. Risk score is {risk}")
+                            if age > 40:
+                                risk = "7-13"
+                                print(f"Recommedation is Biopsy/therapy + HCC survailence. Risk score is {risk}")
+                            else:
+                                risk = "5-8"
+                                print(f"User has negative HBeAg(-). Recommendation is 1-3 month follow up. Risk score of {risk}")
 
 
 # Press the green button in the gutter to run the script.
